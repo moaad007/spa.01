@@ -1,0 +1,17 @@
+.dash{
+   width: 100vw;
+    padding: 25px;
+    
+    
+}
+.dash ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    list-style:none;
+    color: aliceblue;
+    text-align: center;
+    background-color: rgba(114, 136, 150, 0.889);
+    width: 100vw;
+    
+}
