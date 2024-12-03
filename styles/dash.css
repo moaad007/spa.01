@@ -16,7 +16,7 @@
   
     gap: 150px;
 }
-@media (max-width: 500px) {
+@media (max-width: 300px) {
     .dash ul {
         gap: 40px; /* Smaller gap for mobile */
     }
