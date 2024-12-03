@@ -1,23 +1,33 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
 .dash{
-
+   
+    max-width: 100%;
    width: 100%;
     padding: 25px;
-    
-    
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
 }
 .dash ul{
     display:flex;
-    justify-content:center ;
+    justify-content:space-evenly;
+    justify-items: center;
+    flex-wrap: wrap;
     text-decoration: none;
     list-style:none;
     color: #222526;
     text-align: center;
     background-color: transparent;  
     gap: 150px;
+    box-sizing: border-box;
 }
 @media (max-width: 600px) {
     .dash ul {
-        
-        gap: 20px; /* Smaller gap for mobile */
+        max-width: 100%;
+        gap: 16px; /* Smaller gap for mobile */
+        box-sizing: border-box;
     }
 }
