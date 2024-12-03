@@ -12,8 +12,7 @@
     list-style:none;
     color: #222526;
     text-align: center;
-    background-color: transparent;
-  
+    background-color: transparent;  
     gap: 150px;
 }
 @media (max-width: 600px) {
