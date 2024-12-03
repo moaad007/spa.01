@@ -13,6 +13,11 @@
     color: #222526;
     text-align: center;
     background-color: transparent;
-    width: 90%;
-    gap: 250px;
+  
+    gap: 150px;
+}
+@media (max-width: 768px) {
+    .dash ul {
+        gap: 40px; /* Smaller gap for mobile */
+    }
 }
