@@ -78,4 +78,7 @@
     .nav .item {
         margin: 10px 0;
     }
+    .content{
+        width: 90%;
+    }
 }
