@@ -23,16 +23,22 @@
     text-decoration: none;
     padding: 26px;
     border-radius: 13px;
-    display: inline-block;
+    display: inline;
     text-decoration: none;
     color:floralwhite;
+    width:200px;
+}
+.nav-link{
+    
 }
 .item a.active {
     background-color: #1775B6; /* Active background color */
     color: white; /* Active text color */
     padding: 23px;
-    width: 100px;
+   
+    max-width: fit-content;
     text-align: center;
+transition: 0.3s ease-in-out;
 }
 .content{
     background-color:  #FAFBFC;
