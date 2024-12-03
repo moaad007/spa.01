@@ -17,6 +17,7 @@
 }
 @media (max-width: 600px) {
     .dash ul {
-        gap: 40px; /* Smaller gap for mobile */
+        
+        gap: 20px; /* Smaller gap for mobile */
     }
 }
