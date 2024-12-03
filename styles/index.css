@@ -98,14 +98,16 @@ transition: all 0.3s ease-in-out;
        width: 100%;
        text-align: center;
        transition: 0.3s;
+       justify-items: center;
     }
     .container nav.active{
         left: 0;
     }
 
-    .container button {
-        display: none;
-    }
+   .container{
+    display: flex;
+    gap: 150px;
+   }
 
     .nav .item {
         margin: 10px 0;
@@ -131,4 +133,8 @@ transition: all 0.3s ease-in-out;
    }.hamMenu.active .bar:nth-child(3){
     transform: translateY(-5px) rotate(-40deg);
    }
+   .item a.active {
+   
+    background-color: transparent;
+}
 }
