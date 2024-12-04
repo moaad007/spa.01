@@ -2,8 +2,40 @@
     padding: 0;
     box-sizing: border-box;
 }
-.appContainer{
-    height: 500px;
+.divMother{
+    background: #E7E8EB;
+    height: 100%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+}
+.appContainer {
+   display: flex;
+   
+    margin: 70px;
+    padding: 50px;
+    height: 70%;
+    width: 80%;
+    border-radius: 11px;
+    background-color: #C5D9FF;
+}
+.appContainer .inputBox{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    
+    
+}
+.inputBox input{
+    outline: none;
+    border: 1px solid #000;
+    background-color: transparent;
+    position: relative;
+    height: 50px;
+}
+
+.inps{
     width: 100%;
 
     display: flex;
