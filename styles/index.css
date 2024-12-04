@@ -4,7 +4,7 @@
 }
 .container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     background-color:#3794E6 ;
@@ -13,6 +13,7 @@
     max-width: 100%;
     width: 100;
     box-sizing: border-box;
+  
 }
 .nav div {
     display: inline;
@@ -98,17 +99,19 @@ transition: all 0.3s ease-in-out;
        flex-direction: column;
        position: fixed;
        left: -100%;
-       top: 70px;
+       top: 1px;
        gap: 0;
        background-color: #548cda;
-       width: 100%;
+       width: 50%;
+       height: 100%;
        text-align: center;
        transition: 0.3s;
-       justify-items: center;
+       justify-content:space-around;
     }
     .container nav.active{
         left: 0;
     }
+    
 
    .container{
     display: flex;
@@ -135,9 +138,9 @@ transition: all 0.3s ease-in-out;
     opacity: 0;
    }
    .hamMenu.active .bar:nth-child(1){
-   transform: translateY(5px) rotate(40deg);
+   transform: translateY(5px) rotate(45deg);
    }.hamMenu.active .bar:nth-child(3){
-    transform: translateY(-5px) rotate(-40deg);
+    transform: translateY(-5px) rotate(-45deg);
    }
    .item a.active {
    
