@@ -2,6 +2,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 .divMother{
     background: #E7E8EB;
     height: 100%;
@@ -35,7 +36,7 @@
 }
 
 .inps{
-    width: 100%;
+
 
     display: flex;
 justify-content: center;
