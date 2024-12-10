@@ -1,68 +1,44 @@
 <link rel="stylesheet" href="styles/app.css">
 <div class="divMother">
-    <h1>manage Appointments</h1>
-  <div class="appContainer">
-    <form action="">
-  
+    <h1>Manage Appointments</h1>
+    <div class="appContainer">
+        <form action="">
+            <div class="inps">
+                <div class="inputBox large">
+                    <label for="name">Client Name</label>
+                    <input type="text" id="name">
+                </div>
 
+                <div class="inputBox large">
+                    <label for="num">How Many People</label>
+                    <input type="number" id="num">
+                </div>
+            </div>
 
- <div class="inps">
-     <span>
-        
-   
-        <div class="inputBox">
-    <label for="name">client name</label>
- <input type="text" id="name">
- </div>
+            <div class="inps">
+                <div class="inputBox large">
+                    <label for="date">Choose a Date</label>
+                    <input type="date" id="date">
+                </div>
 
+                <div class="inputBox large">
+                    <label for="time">Choose a Time</label>
+                    <input type="time" id="time">
+                </div>
+            </div>
 
+            <div class="inputBox ">
+                <label for="formula">Choose a Formula</label>
+                <select id="formula">
+                    <option value="">None</option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AO">Angola</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select>
+            </div>
 
-     <div class="inputBox">
-        
- <label for="num">how many poeple</label>
-     <input type="number" id="num">
-     </div>
-     </span>
-<span>
-    <div class="inputBox">
-        <label for="date">choose a date</label>
-    <input type="date" id="date" >
-    </div>
-
-
-    
-    <div class="inputBox">
-        <label for="time">choose a time</label>
-    <input type="time" id="time">
-    </div> 
-</span>
-    
-    </div>
-
-<div class="inputBox">
-
-    <label for="formula">choose a formula</label>
-    <select   id="formula">
-        <option value="">Non</option>
-
-        <option value="AF">Afghanistan</option>
-            <option value="DZ">Algeria</option>
-            <option value="AO">Angola</option>
-            
-            <option value="ZW">Zimbabwe</option>
-      
-
-        
-        </select>
-</div>
-    
-
-
-
-
-
-    <button type="submit">add Appointment</button>
-</form>
-  
-</div>  
+            <button type="submit">Add Appointment</button>
+        </form>
+    </div>  
 </div>
