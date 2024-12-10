@@ -93,3 +93,21 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #1775B6;
 }
+@media (max-width: 600px) {
+
+    .appContainer {
+        width: 100%;
+    }
+   
+    .inps{
+        flex-direction: column;
+    }
+    h1 {
+        margin-bottom: 0px;
+        font-size: 1rem;
+    position: absolute;
+    top: 5vh;
+    right: 20vw;
+    }
+
+}
