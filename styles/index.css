@@ -29,14 +29,12 @@
     color:floralwhite;
     width:200px;
 }
-.nav-link{
-    
-}
+
 .item a.active {
     background-color: #1775B6; /* Active background color */
     color: white; /* Active text color */
     padding: 23px;
-   
+
     max-width: fit-content;
     text-align: center;
 transition: 0.3s ease-in-out;
@@ -107,6 +105,7 @@ transition: all 0.3s ease-in-out;
        text-align: center;
        transition: 0.3s;
        justify-content:space-around;
+       z-index: 1;
     }
     .container nav.active{
         left: 0;
