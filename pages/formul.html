@@ -1,35 +1,39 @@
-<link rel="stylesheet" href="formul.html">
+
+    <link rel="stylesheet" href="styles/fornulas.css"> 
 
 
-<form action="">
+<div class="containerr">
+    <form action="">
+        <h1>Manage Formulas</h1>
 
-<div>
-<h1>manage formulas</h1>
+        <div>
+            <label for="name">Formula Name</label>
+            <input type="text" id="name">
+        </div>
 
-<div>
-    <label for="name">fomula name</label>
-<input type="text"  id="name">
+        <div>
+            <label for="duration">Duration</label>
+            <input type="number" id="duration">
+        </div>
+
+        <div>
+            <label for="price">Price</label>
+            <input type="number" id="price">
+        </div>
+
+        <button type="button" id="btn">Add Formula</button>
+    </form>
+
+    <section>
+        <div class="formula-list">
+            <ul>
+                <li>Name</li>
+                <li>Duration</li>
+                <li>Price</li>
+                <li>Action</li>
+            </ul>
+        </div>
+    </section>
 </div>
-<div>
-    <label for="duration">duration</label>
-    <input type="number"  id="duration">
-</div>
-<div>
-    <label for="price">price</label>
-    <input type="number"  id="price">
-</div>
-<button type="reset">add formula</button>
 
-
-</form>
-<section>
-    <div>
-        <ul>
-            <li>name</li>
-            <li>duration</li>
-            <li>price</li>
-            <li>action</li>
-        </ul>
-    </div>
-</section>
-</div>
+<script src="./script/Fscript.js"></script> 

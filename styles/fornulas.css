@@ -1,0 +1,140 @@
+/* General Resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F7FA;
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.containerr {
+    background-color: #E7E8EB;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align at the top */
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #3A3B3C;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Restrict the form to a max-width for large screens */
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #C5D9FF;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input {
+    outline: none;
+    border: 2px solid #A3B0E2;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #F4F6FF;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #3794E6;
+}
+
+button[type="button"] {
+    padding: 15px;
+    background-color: #3794E6;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button[type="reset"]:hover {
+    background-color: #1775B6;
+}
+
+/* Section for displaying formulas */
+section {
+    width: 100%;
+    max-width: 600px; /* Match form width for consistency */
+    margin: 0 auto;
+}
+
+.formula-list ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #C5D9FF;
+    border-radius: 10px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    width: 100%;
+}
+
+.formula-list ul li {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .containerr {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+   
+
+    .formula-list ul li {
+        padding: 10px 0;
+    }
+
+    section {
+        max-width: 100%;
+    }
+}

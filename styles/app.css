@@ -93,21 +93,31 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #1775B6;
 }
+
+/* Media Query for smaller screens */
 @media (max-width: 600px) {
 
     .appContainer {
-        width: 100%;
+        width: 90%; /* Expand container width to take up more space on small screens */
+        padding: 20px; /* Adjust padding for smaller screens */
     }
    
-    .inps{
-        flex-direction: column;
-    }
-    h1 {
-        margin-bottom: 0px;
-        font-size: 1rem;
-    position: absolute;
-    top: 5vh;
-    right: 20vw;
+    .inps {
+        flex-direction: column; /* Stack inputs vertically */
     }
 
+    .inputBox {
+        width: 100%; /* Make each input take full width on small screens */
+    }
+
+    h1 {
+        font-size: 1.5rem; /* Slightly smaller heading for small screens */
+        margin-bottom: 10px;
+        text-align: center; /* Center the heading */
+    }
+
+    button[type="submit"] {
+        font-size: 1rem; /* Adjust button text size for smaller screens */
+        padding: 12px;
+    }
 }
