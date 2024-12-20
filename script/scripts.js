@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const hamMenu = document.querySelector('.hamMenu');
     const nav = document.querySelector('.nav');
 
-   
-
-
     // Add click event listener to ham menu
     hamMenu.addEventListener('click',(e)=>{
         e.preventDefault()
@@ -23,10 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Remove the 'active' class from any currently active links
             document.querySelectorAll('.nav-link.active').forEach(activeLink => {
                 activeLink.classList.remove('active');
-               
-
             });
-
             // Add the 'active' class to the clicked link
             this.classList.add('active');
             const content = this.getAttribute('data-section');
