@@ -42,9 +42,10 @@ document.addEventListener('DOMContentLoaded', () => {
              if (script.src) {
                  // If the script has a src, load it from the external source
                  newScript.src = script.src;
+                 newScript.async = false; // Ensure synchronous execution if necessary
              } else {
                  // If the script is inline, copy its content
-                 newScript.innerHTML = script.innerHTML;
+                 newScript.text = script.innerHTML;
              }
              document.body.appendChild(newScript);
          });
