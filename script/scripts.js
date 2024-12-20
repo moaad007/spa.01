@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Add click event listener to ham menu
-    hamMenu.addEventListener('click',()=>{
+    hamMenu.addEventListener('click',(e)=>{
+        e.preventDefault()
         hamMenu.classList.toggle("active")
         nav.classList.toggle("active")
     })
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     links.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();  // Prevent default anchor behavior
- hamMenu.classList.remove('active');
+                hamMenu.classList.remove('active');
                 nav.classList.remove('active');
             // Remove the 'active' class from any currently active links
             document.querySelectorAll('.nav-link.active').forEach(activeLink => {
