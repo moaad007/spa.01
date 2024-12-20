@@ -42,6 +42,7 @@ h1 {
 
 .inps {
     display: flex;
+    gap: 20px;
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -63,6 +64,7 @@ h1 {
     color: #333;
 }
 
+
 .inputBox input, .inputBox select {
     outline: none;
     border: 2px solid #A3B0E2;
@@ -72,6 +74,7 @@ h1 {
     font-size: 1rem;
     transition: border 0.3s ease;
 }
+
 
 .inputBox input:focus, .inputBox select:focus {
     border-color: #3794E6; /* Highlight on focus */

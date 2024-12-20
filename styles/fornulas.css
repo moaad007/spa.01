@@ -69,7 +69,7 @@ input:focus {
     border-color: #3794E6;
 }
 
-button[type="button"] {
+button[type="submit"] {
     padding: 15px;
     background-color: #3794E6;
     color: white;

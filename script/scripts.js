@@ -4,7 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const contentDiv=document.querySelector('.content')
     const hamMenu = document.querySelector('.hamMenu');
     const nav = document.querySelector('.nav');
-// Add click event listener to ham menu
+
+   
+
+
+    // Add click event listener to ham menu
     hamMenu.addEventListener('click',()=>{
         hamMenu.classList.toggle("active")
         nav.classList.toggle("active")
@@ -13,12 +17,12 @@ document.addEventListener('DOMContentLoaded', () => {
     links.forEach(link => {
         link.addEventListener('click', function (e) {
             e.preventDefault();  // Prevent default anchor behavior
-
+ hamMenu.classList.remove('active');
+                nav.classList.remove('active');
             // Remove the 'active' class from any currently active links
             document.querySelectorAll('.nav-link.active').forEach(activeLink => {
                 activeLink.classList.remove('active');
-                hamMenu.classList.remove('active');
-                nav.classList.remove('active');
+               
 
             });
 
@@ -35,6 +39,21 @@ document.addEventListener('DOMContentLoaded', () => {
     .then(Response=>Response.text())
     .then(data=>{
         contentDiv.innerHTML=data;
+        
+         // Execute any script tags in the fetched content
+         const scripts = contentDiv.querySelectorAll('script');
+         scripts.forEach(script => {
+             const newScript = document.createElement('script');
+             if (script.src) {
+                 // If the script has a src, load it from the external source
+                 newScript.src = script.src;
+             } else {
+                 // If the script is inline, copy its content
+                 newScript.innerHTML = script.innerHTML;
+             }
+             document.body.appendChild(newScript);
+         });
+     
     })
     .catch(err=>{
         contentDiv.innerHTML= '<p>error 404</p>'
@@ -47,4 +66,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 });
+
+
+
+
 
